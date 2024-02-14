@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "rm -rf dist && ncc build index.js --license licenses.txt"
+    "build": "rm -rf dist && ncc build index.js --license licenses.txt && rm -rf node_modules/*"
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
