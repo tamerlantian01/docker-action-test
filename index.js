@@ -3,7 +3,7 @@ const github = require("@actions/github");
 const exec = require("@actions/exec");
 
 const executeCommands = async () => {
-  core.notice("Start flow");
+  core.notice("Start action flow");
 
   await exec.exec('ls');
   await exec.exec('pwd');
