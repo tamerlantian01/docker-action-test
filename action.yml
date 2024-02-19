@@ -1,6 +1,10 @@
 # action.yml
 name: 'Ascendev'
 description: 'Run ascendev checks'
+inputs:
+  base-url:
+    description: 'Server base URL'
+    required: true
 runs:
   using: 'node20'
   main: 'dist/index.js'

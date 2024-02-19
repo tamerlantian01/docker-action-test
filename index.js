@@ -58,7 +58,7 @@ const executeActions = async (baseUrl) => {
  */
 const main = async () => {
   try {
-    const baseUrl = "https://dbeb-191-106-237-3.ngrok-free.app";
+    const baseUrl = core.getInput('base-url');
     await executeActions(baseUrl);
   } catch (error) {
     core.setFailed(error.message);
