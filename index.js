@@ -58,7 +58,7 @@ const executeActions = async (baseUrl) => {
  */
 const main = async () => {
   try {
-    const baseUrl = core.getInput('base-url');
+    const baseUrl = core.getInput("base-url");
     await executeActions(baseUrl);
   } catch (error) {
     core.setFailed(error.message);
