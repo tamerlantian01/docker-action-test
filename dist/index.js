@@ -31847,7 +31847,7 @@ const executeActions = async (baseUrl) => {
     let errorMessage = "";
     const userId = await fs.readFile(".userid", "utf8");
     const response = await fetch(
-      `${baseUrl}/api/user-story/user-id?search=${userId}`
+      `${baseUrl}/user-story/active?user_id=${userId}`
     );
 
     if (!response.ok) {
